@@ -242,9 +242,10 @@ Your team must meet **all** checkpoints.
 ### 9.1 Top edge cases you will test
 | Edge case | Why it matters | How you will test | Expected behavior |
 |---|---|---|---|
-|  |  |  |  |
-|  |  |  |  |
-
+| No WiFi interference (baseline) | Establishes reference performance with no congestion | Run Bluetooth test with WiFi disabled | Low latency and near-zero packet loss |
+| Active 2.4 GHz WiFi interference | Tests real-world congestion in shared band |Use phone hotspot on 2.4 GHz while running trials| Increased latency and higher packet loss |
+| High congestion environment | Many devices in same band increase interference | Run hotspot + additional WiFi traffic if possible | Further increase in latency and packet loss |
+| Weak Bluetooth signal (distance/placement) | Signal quality can affect reliability | Slightly change device placement or distance | Higher latency variability and possible packet loss |
 ### 9.2 Minimal test plan
 - Integration tests (required): e.g., “run pipeline and verify outputs exist + schema sanity”
 - Unit tests (optional):
