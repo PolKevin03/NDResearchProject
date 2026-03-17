@@ -26,7 +26,7 @@ Write 3 claim statements you found, each with a citation.
 
 ### 1.2 Your open question
 Rewrite one claim into a measurable question:
-- **Research question (1 sentence):**Will there be interference affected with Bluetooth communication latency and packet loss with devices under controlled traffic conditions?
+- **Research question (1 sentence):**How does WiFi interference affect Bluetooth latency and packet loss under controlled conditions?
 - **Hypothesis (falsifiable, 1 sentence):**Bluetooth latency and packet loss will increase when 2.4 GHz WiFi traffic is active, and trials with interference will show higher median/p95 latency and loss than trials without interference.
 
 ### 1.3 Difference from prior work
@@ -103,8 +103,8 @@ python scripts/analyze_data.py
 1:30 - Running experiment
 2:30 - Results
 3:30 - Conclusion
-### 3.4 Two-page paper deliverable (IEEE 2-column format) N/A still in progress
-- Paper title:
+### 3.4 Two-page paper deliverable (IEEE 2-column format) 
+- Paper title: Paper title: Impact of WiFi Interference on Bluetooth Latency and Packet Loss
 - 2 pages (PDF), includes at least **one results figure/table**
 
 ---
@@ -244,7 +244,7 @@ Your team must meet **all** checkpoints.
 |---|---|---|---|
 | No WiFi interference (baseline) | Establishes reference performance with no congestion | Run Bluetooth test with WiFi disabled | Low latency and near-zero packet loss |
 | Active 2.4 GHz WiFi interference | Tests real-world congestion in shared band |Use phone hotspot on 2.4 GHz while running trials| Increased latency and higher packet loss |
-| High congestion environment | Many devices in same band increase interference | Run hotspot + additional WiFi traffic if possible | Further increase in latency and packet loss |
+| High congestion environment | Many devices in same band increase interference | Run hotspot  | Further increase in latency and packet loss |
 | Weak Bluetooth signal (distance/placement) | Signal quality can affect reliability | Slightly change device placement or distance | Higher latency variability and possible packet loss |
 ### 9.2 Minimal test plan
 - Integration tests (required): e.g., “run pipeline and verify outputs exist + schema sanity”
